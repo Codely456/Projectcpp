@@ -7,8 +7,11 @@ int main() {
     printf("Enter your age: ");
     scanf("%d", &age);
     
-    // Checking voting eligibility
-    if (age >= 18) {
+    // Validating age input
+    if (age < 0) {
+        printf("Invalid age! Please enter a valid age.\n");
+    }
+    else if (age >= 18) {
         printf("You are eligible to vote!\n");
         printf("Make sure to participate in the elections.\n");
     } else {

@@ -5,8 +5,13 @@ int main() {
     
     // Taking user input for age
     printf("Enter your age: ");
-    scanf("%d", &age);
     
+    // Validate input to ensure it's an integer
+    if (scanf("%d", &age) != 1) {
+        printf("Invalid input! Please enter a valid integer age.\n");
+        return 1; // Exit with an error code
+    }
+
     // Validating age input
     if (age < 0) {
         printf("Invalid age! Please enter a valid age.\n");

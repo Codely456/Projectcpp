@@ -24,6 +24,9 @@ int main() {
         printf("Sorry, you are not eligible to vote.\n");
         printf("You can vote after %d years.\n", years_left);
     }
+
+    // Thank you message
+    printf("Thank you for checking your voting eligibility!\n");
     
     return 0;
 }

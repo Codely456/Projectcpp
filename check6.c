@@ -12,8 +12,9 @@ int main() {
         printf("You are eligible to vote!\n");
         printf("Make sure to participate in the elections.\n");
     } else {
+        int years_left = 18 - age;  // Calculate years left
         printf("Sorry, you are not eligible to vote.\n");
-        printf("You can vote once you turn 18.\n");
+        printf("You can vote after %d years.\n", years_left);
     }
     
     return 0;
